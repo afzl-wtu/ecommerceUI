@@ -105,29 +105,25 @@ class _CartTabState extends State<CartTab> {
             child: ListView.builder(
               shrinkWrap: true,
               itemCount: items.length,
-              itemBuilder: (context, index) => Container(
-                padding: EdgeInsets.all(20),
-                color: Colors.amber,
-                child: Dismissible(
-                  key: GlobalKey(),
-                  direction: DismissDirection.startToEnd,
-                  background: Container(
-                    color: Colors.red,
-                    child: Row(
-                      children: [
-                        SizedBox(width: 38),
-                        Icon(Icons.delete),
-                      ],
-                    ),
+              itemBuilder: (context, index) => Dismissible(
+                key: GlobalKey(),
+                direction: DismissDirection.startToEnd,
+                background: Container(
+                  color: Colors.red,
+                  child: Row(
+                    children: [
+                      SizedBox(width: 38),
+                      Icon(Icons.delete),
+                    ],
                   ),
-                  child: ListTile(
-                    leading: CircleAvatar(
-                      backgroundImage: AssetImage(items[index].image),
-                    ),
-                    title: Text(items[index].title),
-                    subtitle: Text(items[index].quantity),
-                    trailing: Text(items[index].price),
+                ),
+                child: ListTile(
+                  leading: CircleAvatar(
+                    backgroundImage: AssetImage(items[index].image),
                   ),
+                  title: Text(items[index].title),
+                  subtitle: Text(items[index].quantity),
+                  trailing: Text(items[index].price),
                 ),
               ),
             ),

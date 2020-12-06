@@ -88,18 +88,22 @@ class _FavouriteTabState extends State<FavouriteTab> {
                   ),
                   footer: GridTileBar(
                     backgroundColor: Colors.black38,
-                    title: Text(
-                      e.title,
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
+                    title: FittedBox(
+                      child: Text(
+                        e.title,
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
-                    subtitle: Text(
-                      e.price,
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
+                    subtitle: FittedBox(
+                      child: Text(
+                        e.price,
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                     leading: IconButton(

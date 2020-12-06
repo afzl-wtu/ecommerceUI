@@ -139,7 +139,7 @@ class _SelectLoginState extends State<SelectLogin> {
                               context,
                               PageRouteBuilder(
                                   transitionDuration:
-                                      Duration(milliseconds: 1500),
+                                      Duration(milliseconds: 400),
                                   transitionsBuilder: (context, animation,
                                           animationTime, child) =>
                                       ScaleTransition(

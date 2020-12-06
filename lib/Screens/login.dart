@@ -133,7 +133,7 @@ class _LoginState extends State<Login> {
                     Navigator.pushReplacement(
                       context,
                       PageRouteBuilder(
-                          transitionDuration: Duration(milliseconds: 1500),
+                          transitionDuration: Duration(milliseconds: 400),
                           transitionsBuilder:
                               (context, animation, animationTime, child) =>
                                   ScaleTransition(

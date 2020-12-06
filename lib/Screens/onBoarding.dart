@@ -40,11 +40,11 @@ class _OnBoardingState extends State<OnBoarding> {
                 style: OnBoarding.style,
               ),
               Text(
-                "It's Me",
+                "Jonathan",
                 style: OnBoarding.style,
               ),
               Text(
-                "Tasadduq",
+                "Darmon",
                 style: OnBoarding.style,
               ),
             ],

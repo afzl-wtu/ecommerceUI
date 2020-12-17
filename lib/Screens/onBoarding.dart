@@ -6,7 +6,7 @@ import 'package:relativity_d1/Screens/selectLogin.dart';
 
 class OnBoarding extends StatefulWidget {
   static final style = TextStyle(
-    color: Colors.purple.shade600,
+    color: Colors.white,
     fontSize: 30,
     fontFamily: "Billy",
     fontWeight: FontWeight.w600,
@@ -21,37 +21,6 @@ class _OnBoardingState extends State<OnBoarding> {
   final liquidController = LiquidController();
 
   final pages = [
-    Container(
-      width: double.infinity,
-      color: Color(0xffF3F4F6),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisSize: MainAxisSize.max,
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: <Widget>[
-          Image.asset(
-            'assets/images/boarding01.jpg',
-            fit: BoxFit.cover,
-          ),
-          Column(
-            children: <Widget>[
-              Text(
-                "Hi",
-                style: OnBoarding.style,
-              ),
-              Text(
-                "Jonathan",
-                style: OnBoarding.style,
-              ),
-              Text(
-                "Darmon",
-                style: OnBoarding.style,
-              ),
-            ],
-          ),
-        ],
-      ),
-    ),
     Container(
       width: double.infinity,
       color: Color(0xff7DCCD9),
@@ -232,7 +201,7 @@ class _OnBoardingState extends State<OnBoarding> {
               padding: const EdgeInsets.all(25.0),
               child: FlatButton(
                 onPressed: () {
-                  liquidController.currentPage <= 3
+                  liquidController.currentPage <= pages.length - 2
                       ? liquidController.jumpToPage(
                           page: liquidController.currentPage + 1)
                       : Navigator.pushReplacement(
@@ -244,12 +213,14 @@ class _OnBoardingState extends State<OnBoarding> {
                 },
                 child: FutureBuilder(
                     future: Future.delayed(Duration(milliseconds: 300)),
-                    builder: (ctx, snap) => snap.connectionState ==
-                            ConnectionState.waiting
-                        ? Text('Loading...')
-                        : Text(
-                            liquidController.currentPage <= 3 ? "Next" : "Done",
-                          )),
+                    builder: (ctx, snap) =>
+                        snap.connectionState == ConnectionState.waiting
+                            ? Text('Loading...')
+                            : Text(
+                                liquidController.currentPage <= pages.length - 2
+                                    ? "Next"
+                                    : "Done",
+                              )),
                 color: Colors.white.withOpacity(0.01),
               ),
             ),

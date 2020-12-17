@@ -11,7 +11,7 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   // Setting duration in splash screen
   startTime() async {
-    return new Timer(Duration(milliseconds: 4500), navigatorPage);
+    return new Timer(Duration(milliseconds: 2000), navigatorPage);
   }
 
   // To navigate layout change
@@ -35,7 +35,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/images/tsdq.JPG'),
+            image: AssetImage('assets/images/splash.jpeg'),
             fit: BoxFit.cover,
           ),
         ),

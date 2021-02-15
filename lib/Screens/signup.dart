@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:relativity_d1/Screens/login.dart';
-
-import 'home.dart';
+import './login.dart';
+import './home.dart';
 
 class Signup extends StatefulWidget {
   @override

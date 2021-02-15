@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'payment.dart';
+import './payment.dart';
 
 class Delivery extends StatefulWidget {
   @override

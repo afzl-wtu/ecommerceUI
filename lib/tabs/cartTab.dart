@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:relativity_d1/models/product.dart';
+
+import '../models/product.dart';
 
 class CartTab extends StatefulWidget {
   @override

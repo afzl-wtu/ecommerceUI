@@ -1,7 +1,7 @@
+import 'package:flutter/material.dart';
 import 'dart:async';
 
-import 'package:flutter/material.dart';
-import 'package:relativity_d1/Screens/home.dart';
+import '../Screens/home.dart';
 
 class Payment extends StatefulWidget {
   @override

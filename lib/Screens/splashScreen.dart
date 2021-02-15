@@ -1,7 +1,8 @@
+import 'package:flutter/material.dart';
+
 import 'dart:async';
 
-import 'package:flutter/material.dart';
-import 'package:relativity_d1/Screens/onBoarding.dart';
+import './onBoarding.dart';
 
 class SplashScreen extends StatefulWidget {
   @override

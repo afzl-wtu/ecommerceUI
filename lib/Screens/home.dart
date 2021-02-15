@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter/rendering.dart';
-import 'package:relativity_d1/tabs/accountTab.dart';
-import 'package:relativity_d1/tabs/cartTab.dart';
-import 'package:relativity_d1/tabs/favouriteTab.dart';
-import 'package:relativity_d1/tabs/homeTab.dart';
+
+import '../tabs/accountTab.dart';
+import '../tabs/cartTab.dart';
+import '../tabs/favouriteTab.dart';
+import '../tabs/homeTab.dart';
 
 class HomeScreen extends StatefulWidget {
   @override

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter/services.dart';
 
-import 'Screens/splashScreen.dart';
+import './Screens/splashScreen.dart';
 
 void main(List<String> args) {
   runApp(MyApp());

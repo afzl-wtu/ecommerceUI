@@ -1,9 +1,10 @@
-import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
 
-import 'package:relativity_d1/Screens/home.dart';
-import 'package:relativity_d1/Screens/login.dart';
-import 'package:relativity_d1/Screens/signup.dart';
+import 'package:carousel_pro/carousel_pro.dart';
+
+import './home.dart';
+import './login.dart';
+import './signup.dart';
 
 class SelectLogin extends StatefulWidget {
   @override

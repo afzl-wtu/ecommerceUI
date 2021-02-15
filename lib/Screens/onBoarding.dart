@@ -1,8 +1,10 @@
+import 'package:flutter/material.dart';
+
 import 'dart:math';
 
-import 'package:flutter/material.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
-import 'package:relativity_d1/Screens/selectLogin.dart';
+
+import '../Screens/selectLogin.dart';
 
 class OnBoarding extends StatefulWidget {
   static final style = TextStyle(

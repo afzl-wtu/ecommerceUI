@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:relativity_d1/tabs/homeTab.dart';
+
+import '../tabs/homeTab.dart';
 
 class WeeklyDiscount extends StatefulWidget {
   @override

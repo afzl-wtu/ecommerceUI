@@ -1,9 +1,11 @@
-import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
+
 import 'package:line_icons/line_icons.dart';
-import 'package:relativity_d1/Screens/menu.dart';
-import 'package:relativity_d1/Screens/productDetail.dart';
-import 'package:relativity_d1/Screens/weeklyDiscount.dart';
+import 'package:carousel_pro/carousel_pro.dart';
+
+import '../Screens/menu.dart';
+import '../Screens/productDetail.dart';
+import '../Screens/weeklyDiscount.dart';
 
 class HomeTab extends StatefulWidget {
   @override

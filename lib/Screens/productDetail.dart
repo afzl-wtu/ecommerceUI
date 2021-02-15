@@ -1,12 +1,13 @@
-import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
-import 'package:relativity_d1/Screens/reviewsAll.dart';
-import 'package:relativity_d1/tabs/cartTab.dart';
-import 'package:relativity_d1/tabs/homeTab.dart';
-import 'package:smooth_star_rating/smooth_star_rating.dart';
 
-import 'chatItem.dart';
-import 'delivery.dart';
+import 'package:smooth_star_rating/smooth_star_rating.dart';
+import 'package:carousel_pro/carousel_pro.dart';
+
+import './chatItem.dart';
+import './delivery.dart';
+import './reviewsAll.dart';
+import '../tabs/cartTab.dart';
+import '../tabs/homeTab.dart';
 
 class ProductDetail extends StatefulWidget {
   final GridElement gridElement;
